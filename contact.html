@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container grid grid--1x2">
+      <form action="https://formspree.io/f/xbjpvdra" method="POST">
+        <h2>Formulaire de contact</h2>
+        <p>
+          Pour tout renseignement, n'hésitez pas à nous adresser votre demande
+          en utilisant le formulaire ci-dessous. Nous vous répondrons dans les
+          meilleurs délais. (Les champs indiqués par (*) sont obligatoires.)
+        </p>
+        <input
+          type="text"
+          required
+          placeholder="Prénom*"
+          name="name"
+          maxlength="100"
+        />
+        <input
+          type="text"
+          required
+          placeholder="Nom*"
+          name="name"
+          maxlength="100"
+        />
+        <input
+          type="email"
+          required
+          placeholder="E-mail*"
+          name="email"
+          maxlength="100"
+        />
+        <input
+          type="text"
+          placeholder="Téléphone"
+          name="telephone"
+          maxlength="40"
+        />
+        <input
+          type="text"
+          placeholder="Entreprise"
+          name="entreprise"
+          maxlength="100"
+        />
+        <input
+          type="text"
+          required
+          placeholder="Sujet de votre message*"
+          name="sujet"
+          maxlength="200"
+        />
+        Votre message*:
+        <textarea name="" id="" cols="30" rows="10"> </textarea>
+        <div>
+          <p>
+            En soumettant ce formulaire, j’accepte que les informations saisies
+            soient exploitées dans le cadre de votre demande et de la relation
+            commerciale qui peut en découler.
+          </p>
+          <input type="checkbox" required name="" id="accept" />
+          <label class="label-inline" for="accept">Oui, j'ai compris</label>
+        </div>
+
+        <button type="submit">
+          <i class="fas fa-alert"></i>
+          Envoyez !
+        </button>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nouvelle soumission du formulaire de contact!"
+        />
+      </form>
+      <picture>
+        <img class="contact__image" src="images/contact.jpg" alt="" />
+      </picture>
+    </div>
+  </body>
+</html>
+
+<!-- <input type="text" list="countries" autocomplete="off" />
+<datalist id="countries">
+  <option data-value="1">Australia</option>
+  <option>Canada</option>
+  <option>India</option>
+  <option>USA</option>
+</datalist>
+
+     <textarea>
+        Votre message
+      </textarea>
+
+      <select multiple>
+        <optgroup label="Front-end">
+          <option value="">select a course...</option>
+          <option value="1" selected>html</option>
+          <option value="2">css</option>
+          <option value="3">javascript</option>
+        </optgroup>
+        <optgroup label="back-end">
+          <option value="">node.js</option>
+          <option value="1" selected>django</option>
+          <option value="2">asp.net</option>
+        </optgroup>
+      </select>
+      <div>
+        <input type="checkbox" name="" id="front-end" />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="back-end" checked />
+        <label class="label-inline" for="back-end">back-end</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="silver" />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+      <input type="range" min="0" max="100" value="90" name="" id="" />
+      <input type="file" multiple accept=".jpg, .svg" />
+      <fieldset>
+        <legend>Billing address</legend>
+        <input type="email" name="" id="" />
+        <input type="date" name="" id="" />
+        <input type="number" min="0" max="5" />
+      </fieldset>
+      <section>
+        <h2>payment</h2>
+        <input type="text" required />
+        <input type="text" minlength="3" />
+        <input type="text" maxlength="10" />
+      </section>
+       <input type="submit" value="Submit" />
+-->
